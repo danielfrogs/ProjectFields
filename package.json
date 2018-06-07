@@ -1,0 +1,16 @@
+{
+  "name": "projectfields",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^11.3.2",
+    "ytdl-core": "^0.20.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Behan",
+  "license": "ISC"
+}
