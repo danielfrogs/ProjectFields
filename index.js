@@ -3,7 +3,7 @@ const botConfig = require("./botconfig.json");
 const musicPlaylist = require("./musicplaylist.js").musicPlaylist;
 
 const Discord = require("discord.js");
-const bot = new Discord.Client();
+const bot = new Discord.Client({autoReconnect: true, maxMessageCache: 0});
 const prefix = botConfig.prefix;
 
 const ytdl = require("ytdl-core");
@@ -50,6 +50,7 @@ bot.on("message", async message => {
 
                 });
             })
+            .catch(console.error);
         }
     loopNumber(); //Calls to do the function loopNumber again  
     }
